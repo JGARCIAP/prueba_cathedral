@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <title>Prueba Cathedral</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+    <body>
+        <div class="screenCTR">
+            <div id="phaseZero" class="startScreen">
+                <h1 class="titleBotChat">¡Hola!</h1>
+                <h2 class="textBotChat">Me dispongo a destruir a la humanidad, pero como me aburro mucho necesito poner a alguien a prueba</h2>
+                <h2 class="subtTextBotChat">Si lo hicieron GLaDOS, Mettaton, Nimrod, y muchos más, yo no voy a ser menos</h2>
+                <form>
+                    <input type="hidden" name='data' value="dataSent">
+                    <button type="submit" name="startGame" value="Submit" class="btn btnStart">START</button>
+                </form>
+            </div>
+            <div id="game" class="gameContainer">
+                <p id="realAnswer" class="solution"></p>
+                <p id="botPun"></p>
+                <div class="riddlerContainer">
+                    <div class="score">
+                        <p id="showCount" class="count"></p>
+                        <p id="showHits" class="hits"></p>
+                    </div>
+                    <section class='riddlerBox' alt="Texto con la pregunta">
+                        <form>
+                            <label id="labelRiddler"></label>
+                            <div id="inputRiddler"></div>
+                            <div id="buttonRiddler"></div> 
+                            <div id="userAnswer"></div> 
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script type='text/javascript' src="scripts.js"></script>
+</html>
